@@ -1,0 +1,29 @@
+dn: cn=alta02,ou=usuaris,dc=edt,dc=org
+changetype: modify
+add: givenName
+givenName: juanca
+givenName: campechano
+-
+replace: mail
+mail: juanca@edt.org
+-
+delete: description
+-
+add: homePhone
+homePhone: 123456789
+
+dn: cn=Pau Pou,ou=usuaris,dc=edt,dc=org
+changetype: delete
+
+dn: cn=new,ou=usuaris,dc=edt,dc=org
+changetype: add
+objectclass: posixAccount
+objectclass: inetOrgPerson
+cn: new
+sn: new new
+uid: new
+uidNumber: 5006
+gidNumber: 100
+homeDirectory: /tmp/home/new
+userPassword: {SSHA}xI0BZWVUAmDWkHD/vEMGLZX+SgyUIDD4
+

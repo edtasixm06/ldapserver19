@@ -1,0 +1,250 @@
+#dn: dc=edt,dc=org
+#dc: edt
+#description: Escola del treball de Barcelona
+#objectClass: dcObject
+#objectClass: organization
+#o: edt.org
+
+dn: ou=hosts,dc=edt,dc=org
+ou: hosts
+description: Container per a hosts linux
+objectclass: organizationalunit
+
+dn: ou=keys,dc=edt,dc=org
+ou: keys
+description: Container per a keys linux
+objectclass: organizationalunit
+
+dn: ou=certs,dc=edt,dc=org
+ou: certs
+description: Container per a certs linux
+objectclass: organizationalunit
+
+dn: ou=domains,dc=edt,dc=org
+ou: domains
+description: Container per a domains linux
+objectclass: organizationalunit
+
+#dn: ou=clients,dc=edt,dc=org
+#ou: clients
+#description: Container per a clients linux
+#objectclass: organizationalunit
+
+dn: o=asia,ou=clients,dc=edt,dc=org
+o: asia 
+description: Clients del continent de asia
+objectclass: organization
+
+dn: o=africa,ou=clients,dc=edt,dc=org
+o: africa
+description: Clients del continent de africa
+objectclass: organization
+
+dn: o=europa,ou=clients,dc=edt,dc=org
+o: europa
+description: Clients del continent de europa
+objectclass: organization
+
+dn: o=eu,o=europa,ou=clients,dc=edt,dc=org
+o: eu
+description: Clients del continent europa: unio europea
+objectclass: organization
+
+dn: o=noneu,o=europa,ou=clients,dc=edt,dc=org
+o: noneu
+description: Clients del continent europa: no unio europea
+objectclass: organization
+
+# ----- users ----------------------------------------------------------
+
+dn: cn=mao tse tung,o=asia,ou=clients,dc=edt,dc=org
+objectclass: posixAccount
+objectclass: inetOrgPerson
+cn: mao tse tung
+cn: mao zedong
+sn: mao
+homephone: 777-222-0001
+mail: mao@asia.edt.org
+description: client de zong guo
+ou: 1wiaw
+uid: mao
+uidNumber: 11001
+gidNumber: 650
+homeDirectory: /tmp/home/1wiaw/mao
+userPassword: {SHA}89F9x2P5XmKafnH54qLunfQ8h0Y=
+
+dn: cn=ho chi minh,o=asia,ou=clients,dc=edt,dc=org
+objectclass: posixAccount
+objectclass: inetOrgPerson
+cn: ho chi minh
+sn: ho
+homephone: 777-222-0002
+mail: ho@asia.edt.org
+description: client de vietnam
+ou: 1wiaw
+uid: ho
+uidNumber: 11002
+gidNumber: 650
+homeDirectory: /tmp/home/1wiaw/ho
+userPassword: {SHA}mnaoV605m0kroBh50PotcX5EMLI=
+
+dn: cn=hirohito,o=asia,ou=clients,dc=edt,dc=org
+objectclass: posixAccount
+objectclass: inetOrgPerson
+cn: hirohito
+sn: hiro
+homephone: 777-222-0003
+mail: hiro@asia.edt.org
+description: client de japo
+ou: 1wiaw
+uid: hiro
+uidNumber: 11003
+gidNumber: 650
+homeDirectory: /tmp/home/1wiaw/hiro
+userPassword: {SHA}bylNbPKEKAirTNxHDMoNj8jHrKA=
+
+dn: cn=nelson mandela,o=africa,ou=clients,dc=edt,dc=org
+objectclass: posixAccount
+objectclass: inetOrgPerson
+cn: nelson mandela
+cn: madiba
+sn: nelson
+homephone: 778-222-0004
+mail: nelson@africa.edt.org
+description: client de sud africa
+ou: 1wiaw
+uid: nelson
+uidNumber: 11004
+gidNumber: 650
+homeDirectory: /tmp/home/1wiaw/nelson
+userPassword: {SHA}2RX06XDlNlQgLBz1xi5gpygKghk=
+
+dn: cn=robert mugabe,o=africa,ou=clients,dc=edt,dc=org
+objectclass: posixAccount
+objectclass: inetOrgPerson
+cn: robert mugabe
+sn: robert
+homephone: 778-222-0005
+mail: robert@africa.edt.org
+description: client de rodesia, zimbawe
+ou: 1wiaw
+uid: robert
+uidNumber: 11005
+gidNumber: 650
+homeDirectory: /tmp/home/1wiaw/robert
+userPassword: {SHA}EukpPsazDH+ooJJq9CgH6SnBaE8=
+
+dn: cn=ali bey,o=africa,ou=clients,dc=edt,dc=org
+objectclass: posixAccount
+objectclass: inetOrgPerson
+cn: ali bey
+cn: domenech badia
+sn: ali
+homephone: 778-222-0006
+mail: ali@africa.edt.org
+description: client de magreb, arabia
+ou: 1wiaw
+uid: ali
+uidNumber: 11006
+gidNumber: 650
+homeDirectory: /tmp/home/1wiaw/ali
+userPassword: {SHA}tCptk9eWkVIi9v+y/91hN9k8HNs=
+
+dn: cn=konrad adenauer,o=eu,o=europa,ou=clients,dc=edt,dc=org
+objectclass: posixAccount
+objectclass: inetOrgPerson
+cn: konrad adenauer
+sn: konrad
+homephone: 779-222-0007
+mail: konrad@eu.europa.edt.org
+description: client de alemanya
+ou: 2wiaw
+uid: konrad
+uidNumber: 11007
+gidNumber: 651
+homeDirectory: /tmp/home/2wiaw/konrad
+userPassword: {SHA}v7M/0OfTWcdI9irH59W8m7FgL6k=
+
+dn: cn=humphrey appleby,o=eu,o=europa,ou=clients,dc=edt,dc=org
+objectclass: posixAccount
+objectclass: inetOrgPerson
+cn: humpprey appleby
+sn: humphrey
+homephone: 779-222-0008
+mail: humprey@eu.europa.edt.org
+description: client de united kingdom
+ou: 2wiaw
+uid: humphrey
+uidNumber: 11008
+gidNumber: 651
+homeDirectory: /tmp/home/2wiaw/humphrey
+userPassword: {SHA}6WvUsL4qewGBxPBk0xxwZq8jSFk=
+
+dn: cn=carles puigdemon,o=eu,o=europa,ou=clients,dc=edt,dc=org
+objectclass: posixAccount
+objectclass: inetOrgPerson
+cn: carles puigdemon
+sn: carles
+homephone: 779-222-0009
+mail: carles@eu.europa.edt.org
+description: client de polonia
+ou: 2wiaw
+uid: carles
+uidNumber: 11009
+gidNumber: 651
+homeDirectory: /tmp/home/2wiaw/carles
+userPassword: {SHA}N59JHsqofesnS/uN/hTgYniAHVc=
+
+dn: cn=francisco franco bahamonde,o=noneu,o=europa,ou=clients,dc=edt,dc=org
+objectclass: posixAccount
+objectclass: inetOrgPerson
+cn: francisco franco bahamonde
+cn: paca
+sn: francisco
+homephone: 779-222-0010
+mail: francisco@noneu.europa.edt.org
+description: client de is different
+ou: 2wiaw
+uid: francisco
+uidNumber: 11010
+gidNumber: 651
+homeDirectory: /tmp/home/2wiaw/fracisco
+userPassword: {SHA}ExWuYilEQ2eWipQ6IZ843vmoES0=
+
+dn: cn=vladimir putin,o=noneu,o=europa,ou=clients,dc=edt,dc=org
+objectclass: posixAccount
+objectclass: inetOrgPerson
+cn: vladimir putin
+sn: vladimir
+homephone: 779-222-0011
+mail: vladimir@noneu.europa.edt.org
+description: client de rusia
+ou: 2wiaw
+uid: vladimir
+uidNumber: 11011
+gidNumber: 651
+homeDirectory: /tmp/home/2wiaw/vladimir
+userPassword: {SHA}3JGGoGB4czkVpvy6s05ZEgvitIQ=
+
+dn: cn=jorge mario bergoglio,o=noneu,o=europa,ou=clients,dc=edt,dc=org
+objectclass: posixAccount
+objectclass: inetOrgPerson
+cn: jorge mario bergoglio
+cn: francisco
+cn: papa
+cn: sua santidad
+sn: jorge
+homephone: 779-222-0012
+mail: jorge@noneu.europa.edt.org
+description: client del cel
+ou: 2wiaw
+uid: jorge
+uidNumber: 11012
+gidNumber: 651
+homeDirectory: /tmp/home/2wiaw/jorge
+userPassword: {SHA}M/knNE4HngDT+kXYgzsE5zUiPuw=
+
+
+
+
+
