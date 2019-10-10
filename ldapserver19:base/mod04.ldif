@@ -1,0 +1,11 @@
+dn: cn=Anna Pou,ou=usuaris,dc=edt,dc=org
+changetype: modify
+add: homePhone
+homePhone: 666-666-666
+-
+replace: uidNumber
+uidNumber: 99999
+-
+add: cn
+cn: la mega anna
+

@@ -1,0 +1,24 @@
+dn: ou=maquines,dc=edt,dc=org
+changetype: modify
+replace: description
+description: nova descripcio de maquines
+-
+add: description
+description: segona descripcio de maquines
+description: tercera descripcio de maquines
+
+dn: ou=productes,dc=edt,dc=org
+changetype: modify
+delete: description
+
+dn: ou=clients,dc=edt,dc=org
+changetype: delete
+
+dn: cn=Pere Pou,ou=usuaris,dc=edt,dc=org
+changetype: delete
+
+dn: ou=consumidors,dc=edt,dc=org
+changetype: add
+ou: consumidors
+description: entitat de consumidors legals
+objectclass: organizationalunit 

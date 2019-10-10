@@ -1,0 +1,31 @@
+#dn: cn=Marta Mas,ou=usuaris,dc=edt,dc=org
+#changetype: modify
+#add: description
+#description: la primera descripcio
+#description: la segona descripcio
+#description: la tercera descripcio
+#description: la ultima descripcio
+#
+#dn: cn=Marta Mas,ou=usuaris,dc=edt,dc=org
+#changetype: modify
+#replace: description
+#description: Watch out for this girl
+#description: la marta es molt bona estudiant
+#
+#dn: cn=Marta Mas,ou=usuaris,dc=edt,dc=org
+#changetype: modrdn
+#newrdn: cn=Marta Menos
+#deleteoldrdn: 1
+#
+#dn: cn=Marta Menos,ou=usuaris,dc=edt,dc=org
+#changetype: modrdn
+#newrdn: cn=Marta Mas
+#deleteoldrdn: 0
+#
+dn: cn=Marta Mas,ou=usuaris,dc=edt,dc=org
+changetype: modrdn
+newrdn: cn=Marta Mas
+deleteoldrdn: 0
+newsuperior: ou=maquines,dc=edt,dc=org
+
+

@@ -1,0 +1,65 @@
+dn: dc=m06,dc=cat
+dc: m06
+description: assignatura asix m06
+objectClass: dcObject
+objectClass: organization
+o: m06.cat
+
+dn: ou=ordinadors,dc=m06,dc=cat
+ou: ordinadors
+description: Container per a maquines linux
+objectclass: organizationalunit
+
+dn: ou=alumnes,dc=m06,dc=cat
+ou: alumnes
+description: Container per a alumnes
+objectclass: organizationalunit
+
+dn: cn=user01,ou=alumnes,dc=m06,dc=cat
+objectclass: posixAccount
+objectclass: inetOrgPerson
+cn: user01
+cn: alumne01 de 1asix de todos los santos
+sn: alumne01
+homephone: 555-222-0001
+mail: user01@m06.cat
+description: alumne de 1asix
+ou: 1asix
+uid: user01
+uidNumber: 7001
+gidNumber: 610
+homeDirectory: /tmp/home/1asix/user01
+userPassword: {SHA}BJf+TWdP43GUpvywiRPllu9qMH8=
+
+dn: cn=user02,ou=alumnes,dc=m06,dc=cat
+objectclass: posixAccount
+objectclass: inetOrgPerson
+cn: user02
+cn: alumne02 Pou Prat
+sn: alumne02
+homephone: 555-222-0000
+mail: user02@m06.cat
+description: alumne de 1asix
+ou: 1asix
+uid: user02
+uidNumber: 7002
+gidNumber: 610
+homeDirectory: /tmp/home/1asix/user02
+userPassword: {SHA}p2WWdWaMKzTwpFbbqlCCADQNw2w=
+
+dn: cn=user03,ou=alumnes,dc=m06,dc=cat
+objectclass: posixAccount
+objectclass: inetOrgPerson
+cn: user03
+cn: alumne03 Pou Prat
+sn: alumne03
+homephone: 555-222-0003
+mail: user03@m06.cat
+description: alumne de 1asix
+ou: 1asix
+uid: user02
+uidNumber: 7003
+gidNumber: 610
+homeDirectory: /tmp/home/1asix/user03
+userPassword: {SHA}bwkliKQ2ZeJKeReSS6IW9Q+3c30=
+

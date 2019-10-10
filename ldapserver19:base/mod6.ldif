@@ -1,0 +1,12 @@
+dn: cn=Anna Elder,ou=consumidors,dc=edt,dc=org
+changetype: modrdn
+newrdn: cn=Anna Pou
+deleteoldrdn: 1
+newsuperior: ou=usuaris,dc=edt,dc=org
+
+dn: cn=Anna Pou,ou=usuaris,dc=edt,dc=org
+changetype: modify
+replace: cn
+cn: Anna Pou
+
+

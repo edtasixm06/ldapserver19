@@ -1,0 +1,6 @@
+dn: cn=Anna Woman,ou=usuaris,dc=edt,dc=org
+changetype: modrdn
+newrdn: cn=Anna Elder
+deleteoldrdn: 1
+newsuperior: ou=consumidors,dc=edt,dc=org
+

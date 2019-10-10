@@ -1,29 +1,33 @@
-dn: cn=alta02,ou=usuaris,dc=edt,dc=org
+dn: cn=Pau Pou,ou=usuaris,dc=edt,dc=org
 changetype: modify
-add: givenName
-givenName: juanca
-givenName: campechano
--
 replace: mail
-mail: juanca@edt.org
+mail: nowmail@edt.org
+-
+replace: homePhone
+homePhone: 111-111-111
 -
 delete: description
 -
-add: homePhone
-homePhone: 123456789
+add: description
+description: nova descripcio de pau pou
 
-dn: cn=Pau Pou,ou=usuaris,dc=edt,dc=org
+dn: cn=Anna Pou,ou=usuaris,dc=edt,dc=org
 changetype: delete
 
-dn: cn=new,ou=usuaris,dc=edt,dc=org
+dn: cn=Anna Pou,ou=usuaris,dc=edt,dc=org
 changetype: add
 objectclass: posixAccount
 objectclass: inetOrgPerson
-cn: new
-sn: new new
-uid: new
-uidNumber: 5006
-gidNumber: 100
-homeDirectory: /tmp/home/new
-userPassword: {SSHA}xI0BZWVUAmDWkHD/vEMGLZX+SgyUIDD4
+cn: Anna Pou
+cn: Anita Pou
+sn: Pou
+homephone: 555-222-2222
+mail: anna@edt.org
+description: Watch out for this girl
+ou: Alumnes
+uid: anna
+uidNumber: 5002
+gidNumber: 600
+homeDirectory: /tmp/home/anna
+userPassword: {SSHA}Bm4B3Bu/fuH6Bby9lgxfFAwLYrK0RbOq
 
