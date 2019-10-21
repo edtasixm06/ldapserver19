@@ -1,4 +1,4 @@
-# ldapserver19:base
+# ldapserver19:multi
 ## ASIX M06-ASO @edt Curs 2019-2020
 
 Servidor multi ldap, amb organització dc=edt,dc=org, 
