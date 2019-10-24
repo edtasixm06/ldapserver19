@@ -1,0 +1,20 @@
+dn: cn=Jordi Mas,ou=usuaris,dc=edt,dc=org
+objectclass: posixAccount
+objectclass: inetOrgPerson
+objectclass: x-futbolistes
+x-equip: los pimientos
+x-dorsal: 10
+cn: Jordi Mas
+cn: Giorgios Mas
+sn: Mas
+homephone: 555-222-2224
+mail: jordi@edt.org
+description: Watch out for this girl
+ou: Alumnes
+ou: Profes
+uid: jordi
+uidNumber: 5004
+gidNumber: 100
+homeDirectory: /tmp/home/jordi
+userPassword: {SSHA}T5jrMgpJwZZgu0azkLIVoYhiG08/KGUv
+
