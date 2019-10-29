@@ -19,3 +19,8 @@ Repositori de creació de'imatges de servidors ldap
     * B) objecte structural derivat de tot
     * C) objecte auxiliar (implementat acompanyant els usuaris
          actuals inetOrgPerson i posixAccount)
+
+ * **phpldapadmin** utilitat d'administració web del servei ldap
+     permet coonnectar al servidor ldap i via php i apache obre
+     el port 80 del container per permetre l'administració
+
