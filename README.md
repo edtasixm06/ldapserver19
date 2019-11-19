@@ -20,6 +20,10 @@ Repositori de creació de'imatges de servidors ldap
     * C) objecte auxiliar (implementat acompanyant els usuaris
          actuals inetOrgPerson i posixAccount)
 
+ * **ldapserver19:group** servidor ldap amb base de dades actualitzada,
+     els usuaris s'identifiquen per UID i els grups ara existeixn com a 
+     posixGroup i se n'ha arreglat la coherència.
+
  * **phpldapadmin** utilitat d'administració web del servei ldap
      permet coonnectar al servidor ldap i via php i apache obre
      el port 80 del container per permetre l'administració
